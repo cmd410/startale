@@ -19,7 +19,7 @@ minetest.register_node("strtl_nodes:stone", {
 minetest.register_node("strtl_nodes:sand", {
 	description = "Sand",
 	tiles = {"strtl_nodes_sand.png"},
-	groups = {dig_immediate=2},
+	groups = {dig_immediate=2, falling_node=1},
 })
 
 minetest.register_node("strtl_nodes:dirt", {
