@@ -39,7 +39,8 @@ minetest.register_node("strtl_nodes:dirt_with_grass", {
 	tiles ={"strtl_nodes_grass.png",
 		"strtl_nodes_dirt.png",
 		{name = "strtl_nodes_dirt.png^strtl_nodes_grass_slide.png",
-		tileable_vertical = false}},
+		tileable_vertical = false},
+	},
 	groups = {dig_immediate=2, soil=1},
 	drop = "strtl_nodes:dirt"
 })
