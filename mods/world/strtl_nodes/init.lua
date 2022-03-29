@@ -22,6 +22,13 @@ minetest.register_node("strtl_nodes:stone", {
 	drop = "strtl_nodes:cobble"
 })
 
+minetest.register_node("strtl_nodes:mossystone", {
+	description = "Mossy cobble",
+	tiles = {"strtl_nodes_mossystone.png"},
+	groups = {dig_immediate=2, cracky=3},
+	drop = "strtl_nodes:mossycobble"
+})
+
 minetest.register_node("strtl_nodes:sand", {
 	description = "Sand",
 	tiles = {"strtl_nodes_sand.png"},
