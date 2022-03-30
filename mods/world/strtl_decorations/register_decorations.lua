@@ -4,7 +4,8 @@ minetest.register_decoration(
         place_on = {
             "strtl_nodes:dirt_with_grass",
             "strtl_nodes:sand",
-            "strtl_nodes:stone"
+            "strtl_nodes:stone",
+            "strtl_nodes:mossystone"
         },
         sidelen = 8,
         fill_ratio = 0.02,
@@ -13,7 +14,10 @@ minetest.register_decoration(
         decoration = {
             "strtl_decorations:pebbles",
             "strtl_decorations:pebbles_1",
-            "strtl_decorations:pebbles_2"
+            "strtl_decorations:pebbles_2",
+            "strtl_decorations:mossypebbles",
+            "strtl_decorations:mossypebbles_1",
+            "strtl_decorations:mossypebbles_2"
         },
         height = 1,
         rotation = "random"

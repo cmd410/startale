@@ -59,6 +59,9 @@ end
 register_small_mesh_node("pebbles", "Pebbles", "pebbles.obj", {"strtl_nodes_stone.png"})
 register_small_mesh_node("pebbles_1", "Pebbles", "pebbles_1.obj", {"strtl_nodes_stone.png"})
 register_small_mesh_node("pebbles_2", "Pebbles", "pebbles_2.obj", {"strtl_nodes_stone.png"})
+register_small_mesh_node("mossypebbles", "Mossy pebbles", "pebbles.obj", {"strtl_nodes_mossystone.png"})
+register_small_mesh_node("mossypebbles_1", "Mossy pebbles", "pebbles_1.obj", {"strtl_nodes_mossystone.png"})
+register_small_mesh_node("mossypebbles_2", "Mossy pebbles", "pebbles_2.obj", {"strtl_nodes_mossystone.png"})
 
 register_grass_node("grass", "Grass", {"strtl_decorations_grass_1.png"})
 register_grass_node("grass_1", "Grass", {"strtl_decorations_grass_2.png"})
