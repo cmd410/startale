@@ -5,12 +5,12 @@ function rotate_axis(itemstack, placer, pointed_thing)
 	return itemstack
 end
 
-minetest.register_node("strtl_nodes:oak_log", {
+minetest.register_node("st_nodes:oak_log", {
 	description = "Oak log",
 	tiles = {
-        "strtl_nodes_wood_log_tops.png^[multiply:#ffcd9c",
-        "strtl_nodes_wood_log_tops.png^[multiply:#ffcd9c",
-        "strtl_nodes_rough_wood.png^[multiply:#ffcd9c"
+        "st_nodes_wood_log_tops.png^[multiply:#ffcd9c",
+        "st_nodes_wood_log_tops.png^[multiply:#ffcd9c",
+        "st_nodes_rough_wood.png^[multiply:#ffcd9c"
     },
 	groups = {dig_immediate=2},
     paramtype2 = "facedir",

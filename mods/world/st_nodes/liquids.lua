@@ -4,7 +4,7 @@ local LAVA_VISC = 7
 
 
 local water_source_tiles = {
-	{	name = "strtl_nodes_water.png"..WATER_ALPHA,
+	{	name = "st_nodes_water.png"..WATER_ALPHA,
 		backface_culling = false,
 		animation = {
 			type = "vertical_frames",
@@ -13,7 +13,7 @@ local water_source_tiles = {
 			length = 4.0
 		}
 	},
-	{	name = "strtl_nodes_water.png"..WATER_ALPHA,
+	{	name = "st_nodes_water.png"..WATER_ALPHA,
 		backface_culling = false,
 		animation = {
 			type = "vertical_frames",
@@ -24,7 +24,7 @@ local water_source_tiles = {
 	},
 }
 
-minetest.register_node("strtl_nodes:water_flowing", {
+minetest.register_node("st_nodes:water_flowing", {
 	description = "Flowing Water".."\n"..
 		"Drowning damage: 1",
 	drawtype = "flowingliquid",
@@ -41,14 +41,14 @@ minetest.register_node("strtl_nodes:water_flowing", {
 	is_ground_content = false,
 	drowning = 1,
 	liquidtype = "flowing",
-	liquid_alternative_flowing = "strtl_nodes:water_flowing",
-	liquid_alternative_source = "strtl_nodes:water_source",
+	liquid_alternative_flowing = "st_nodes:water_flowing",
+	liquid_alternative_source = "st_nodes:water_source",
 	liquid_viscosity = WATER_VISC,
 	post_effect_color = {a = 64, r = 100, g = 100, b = 200},
 	groups = {water = 3, liquid = 3},
 })
 
-minetest.register_node("strtl_nodes:water_source", {
+minetest.register_node("st_nodes:water_source", {
 	description = "Water Source".."\n"..
 		"Drowning damage: 1",
 	drawtype = "liquid",
@@ -64,15 +64,15 @@ minetest.register_node("strtl_nodes:water_source", {
 	is_ground_content = false,
 	drowning = 1,
 	liquidtype = "source",
-	liquid_alternative_flowing = "strtl_nodes:water_flowing",
-	liquid_alternative_source = "strtl_nodes:water_source",
+	liquid_alternative_flowing = "st_nodes:water_flowing",
+	liquid_alternative_source = "st_nodes:water_source",
 	liquid_viscosity = WATER_VISC,
 	post_effect_color = {a = 64, r = 100, g = 100, b = 200},
 	groups = {water = 3, liquid = 3},
 })
 
 
-minetest.register_node("strtl_nodes:river_water_flowing", {
+minetest.register_node("st_nodes:river_water_flowing", {
 	description = "Flowing Water".."\n"..
 		"Drowning damage: 1",
 	drawtype = "flowingliquid",
@@ -89,14 +89,14 @@ minetest.register_node("strtl_nodes:river_water_flowing", {
 	is_ground_content = false,
 	drowning = 1,
 	liquidtype = "flowing",
-	liquid_alternative_flowing = "strtl_nodes:water_flowing",
-	liquid_alternative_source = "strtl_nodes:water_source",
+	liquid_alternative_flowing = "st_nodes:water_flowing",
+	liquid_alternative_source = "st_nodes:water_source",
 	liquid_viscosity = WATER_VISC,
 	post_effect_color = {a = 64, r = 100, g = 100, b = 200},
 	groups = {water = 3, liquid = 1},
 })
 
-minetest.register_node("strtl_nodes:river_water_source", {
+minetest.register_node("st_nodes:river_water_source", {
 	description = "Water Source".."\n"..
 		"Drowning damage: 1",
 	drawtype = "liquid",
@@ -112,8 +112,8 @@ minetest.register_node("strtl_nodes:river_water_source", {
 	is_ground_content = false,
 	drowning = 1,
 	liquidtype = "source",
-	liquid_alternative_flowing = "strtl_nodes:river_water_flowing",
-	liquid_alternative_source = "strtl_nodes:river_water_source",
+	liquid_alternative_flowing = "st_nodes:river_water_flowing",
+	liquid_alternative_source = "st_nodes:river_water_source",
 	liquid_viscosity = WATER_VISC,
 	post_effect_color = {a = 64, r = 100, g = 100, b = 200},
 	groups = {water = 3, liquid = 1},

@@ -1,8 +1,8 @@
 minetest.register_ore(
     {
         ore_type = "scatter",
-        ore = "strtl_nodes:cobble",
-        wherein = "strtl_nodes:stone",
+        ore = "st_nodes:cobble",
+        wherein = "st_nodes:stone",
         clust_scarcity = 8,
         clust_num_ores = 8,
         clust_size = 3,
@@ -23,8 +23,8 @@ minetest.register_ore(
 minetest.register_ore(
     {
         ore_type = "scatter",
-        ore = "strtl_nodes:mossycobble",
-        wherein = "strtl_nodes:stone",
+        ore = "st_nodes:mossycobble",
+        wherein = "st_nodes:stone",
         clust_scarcity = 8,
         clust_num_ores = 8,
         clust_size = 3,
@@ -45,8 +45,8 @@ minetest.register_ore(
 minetest.register_ore(
     {
         ore_type = "scatter",
-        ore = "strtl_nodes:mossystone",
-        wherein = "strtl_nodes:stone",
+        ore = "st_nodes:mossystone",
+        wherein = "st_nodes:stone",
         clust_scarcity = 8,
         clust_num_ores = 8,
         clust_size = 3,

@@ -1,10 +1,10 @@
 local modname = minetest.get_current_modname()
 local modpath = minetest.get_modpath(modname)
 
-local human_model = "strtl_human.b3d"
-local human_texture = "strtl_human.png"
+local human_model = "st_human.b3d"
+local human_texture = "st_human.png"
 
-strtl_anim_objects.register_model(human_model, {
+st_anim_objects.register_model(human_model, {
     mesh = human_model,
     animation_speed = 12,
     textures = {human_texture},
@@ -20,14 +20,14 @@ strtl_anim_objects.register_model(human_model, {
 
 local function set_model(player_name, model_name)
     local player = minetest.get_player_by_name(player_name)
-    strtl_anim_objects.set_model(player, model_name)
+    st_anim_objects.set_model(player, model_name)
 
     -- TODO: make something more smart with animations
     player:set_local_animation(
-        strtl_anim_objects.get_animation_data(model_name, "stand"),
-        strtl_anim_objects.get_animation_data(model_name, "run"),
-        strtl_anim_objects.get_animation_data(model_name, "dig"),
-        strtl_anim_objects.get_animation_data(model_name, "run"),
+        st_anim_objects.get_animation_data(model_name, "stand"),
+        st_anim_objects.get_animation_data(model_name, "run"),
+        st_anim_objects.get_animation_data(model_name, "dig"),
+        st_anim_objects.get_animation_data(model_name, "run"),
         12
     )
 end

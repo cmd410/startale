@@ -6,25 +6,25 @@ dofile(modpath .. "/liquids.lua")
 dofile(modpath .. "/wood.lua")
 
 
-minetest.register_node("strtl_nodes:sand", {
+minetest.register_node("st_nodes:sand", {
 	description = "Sand",
-	tiles = {"strtl_nodes_sand.png"},
+	tiles = {"st_nodes_sand.png"},
 	groups = {dig_immediate=2, falling_node=1},
 })
 
-minetest.register_node("strtl_nodes:dirt", {
+minetest.register_node("st_nodes:dirt", {
 	description = "Dirt",
-	tiles = {"strtl_nodes_dirt.png"},
+	tiles = {"st_nodes_dirt.png"},
 	groups = {dig_immediate=2, soil=1},
 })
 
-minetest.register_node("strtl_nodes:dirt_with_grass", {
+minetest.register_node("st_nodes:dirt_with_grass", {
 	description = "Dirt with Grass",
-	tiles ={"strtl_nodes_grass.png",
-		"strtl_nodes_dirt.png",
-		{name = "strtl_nodes_dirt.png^strtl_nodes_grass_slide.png",
+	tiles ={"st_nodes_grass.png",
+		"st_nodes_dirt.png",
+		{name = "st_nodes_dirt.png^st_nodes_grass_slide.png",
 		tileable_vertical = false},
 	},
 	groups = {dig_immediate=2, soil=1},
-	drop = "strtl_nodes:dirt"
+	drop = "st_nodes:dirt"
 })
