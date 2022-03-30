@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\doc"
+		}
+	],
+	"settings": {},
+	"extensions": {
+		"recommendations": [
+			"sumneko.lua",
+			"GreenXenith.minetest-tools"
+		]
+	}
+}
