@@ -1,4 +1,4 @@
-strtl_anim_objects = {
+st_anim_objects = {
     models = {}
 }
 
@@ -23,13 +23,13 @@ Anim object defenition:
 
 
 -- Register animated object defention under given name
-function strtl_anim_objects.register_model(name, def)
-    strtl_anim_objects.models[name] = def
+function st_anim_objects.register_model(name, def)
+    st_anim_objects.models[name] = def
 end
 
 -- Get model props for ObjectRef:set_properties function
-function strtl_anim_objects.get_model_props(name)
-    local model = strtl_anim_objects.models[name]
+function st_anim_objects.get_model_props(name)
+    local model = st_anim_objects.models[name]
     if model == nil then
         return nil
     end
@@ -46,17 +46,17 @@ function strtl_anim_objects.get_model_props(name)
 end
 
 -- Get animation data for given anim object name
-function strtl_anim_objects.get_animations(name)
-    return (strtl_anim_objects.models[name] or {}).animations
+function st_anim_objects.get_animations(name)
+    return (st_anim_objects.models[name] or {}).animations
 end
 
 -- Get animation data for given model and anim name
-function strtl_anim_objects.get_animation_data(obj_name, anim_name)
-    return (strtl_anim_objects.get_animations(obj_name) or {})[anim_name]
+function st_anim_objects.get_animation_data(obj_name, anim_name)
+    return (st_anim_objects.get_animations(obj_name) or {})[anim_name]
 end
 
 
 -- Set visual model for given ObjRef
-function strtl_anim_objects.set_model(Obj, model_name)
-    Obj:set_properties(strtl_anim_objects.get_model_props(model_name))
+function st_anim_objects.set_model(Obj, model_name)
+    Obj:set_properties(st_anim_objects.get_model_props(model_name))
 end

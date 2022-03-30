@@ -3,11 +3,11 @@ local small_box = {
     fixed = {-0.4, -0.5, -0.4, 0.4, -0.4, 0.4}
 }
 
-minetest.register_node("strtl_decorations:pebbles", {
+minetest.register_node("st_decorations:pebbles", {
 	description = "Pebbles",
 	drawtype = "mesh",
 	mesh = "pebbles.obj",
-	tiles = {"strtl_nodes_stone.png"},
+	tiles = {"st_nodes_stone.png"},
 	floodable = true,
 	walkable = false,
 	buildable_to = true,
@@ -19,7 +19,7 @@ minetest.register_node("strtl_decorations:pebbles", {
 })
 
 local function register_small_mesh_node(name, desc, mesh, tiles)
-    minetest.register_node("strtl_decorations:" .. name, {
+    minetest.register_node("st_decorations:" .. name, {
         description = desc,
         drawtype = "mesh",
         mesh = mesh,
@@ -38,7 +38,7 @@ end
 local function register_grass_node(name, desc, tiles)
     
     minetest.register_node(
-        "strtl_decorations:" .. name,
+        "st_decorations:" .. name,
         {
             description = desc,
             drawtype = "plantlike",
@@ -56,10 +56,13 @@ local function register_grass_node(name, desc, tiles)
     )
 end
 
-register_small_mesh_node("pebbles", "Pebbles", "pebbles.obj", {"strtl_nodes_stone.png"})
-register_small_mesh_node("pebbles_1", "Pebbles", "pebbles_1.obj", {"strtl_nodes_stone.png"})
-register_small_mesh_node("pebbles_2", "Pebbles", "pebbles_2.obj", {"strtl_nodes_stone.png"})
+register_small_mesh_node("pebbles", "Pebbles", "pebbles.obj", {"st_nodes_stone.png"})
+register_small_mesh_node("pebbles_1", "Pebbles", "pebbles_1.obj", {"st_nodes_stone.png"})
+register_small_mesh_node("pebbles_2", "Pebbles", "pebbles_2.obj", {"st_nodes_stone.png"})
+register_small_mesh_node("mossypebbles", "Mossy pebbles", "pebbles.obj", {"st_nodes_mossystone.png"})
+register_small_mesh_node("mossypebbles_1", "Mossy pebbles", "pebbles_1.obj", {"st_nodes_mossystone.png"})
+register_small_mesh_node("mossypebbles_2", "Mossy pebbles", "pebbles_2.obj", {"st_nodes_mossystone.png"})
 
-register_grass_node("grass", "Grass", {"strtl_decorations_grass_1.png"})
-register_grass_node("grass_1", "Grass", {"strtl_decorations_grass_2.png"})
-register_grass_node("grass_2", "Grass", {"strtl_decorations_grass_3.png"})
+register_grass_node("grass", "Grass", {"st_decorations_grass_1.png"})
+register_grass_node("grass_1", "Grass", {"st_decorations_grass_2.png"})
+register_grass_node("grass_2", "Grass", {"st_decorations_grass_3.png"})
