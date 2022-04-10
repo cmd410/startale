@@ -2,7 +2,7 @@ minetest.register_biome({
     name = "mapgen:beach",
     node_top = "st_nodes:sand",
     depth_top = 1,
-    node_filler = "st_nodes:dirt",
+    node_filler = "st_nodes:sand",
     depth_filler = 2,
     node_riverbed = "st_nodes:sand",
     depth_riverbed = 2,
