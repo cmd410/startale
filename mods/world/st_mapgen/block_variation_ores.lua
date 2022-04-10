@@ -20,7 +20,7 @@ minetest.register_ore(
     }
 )
 
-minetest.register_ore(
+--[[minetest.register_ore(
     {
         ore_type = "scatter",
         ore = "st_nodes:mossycobble",
@@ -62,4 +62,4 @@ minetest.register_ore(
             persistence = 0.7
         },
     }
-)
+)--]]--

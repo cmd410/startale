@@ -11,7 +11,13 @@ minetest.clear_registered_decorations()
 
 
 -- Register biomes
-dofile(modpath .. "/grassland.lua")
-dofile(modpath .. "/beach.lua")
-dofile(modpath .. "/rocky_shore.lua")
+dofile(modpath .. "/biomes/grassland.lua")
+dofile(modpath .. "/biomes/beach.lua")
+dofile(modpath .. "/biomes/rocky_shore.lua")
+
 dofile(modpath .. "/block_variation_ores.lua")
+
+-- Decorations
+dofile(modpath .. "/decorations/plantlife.lua")
+dofile(modpath .. "/decorations/trees.lua")
+dofile(modpath .. "/decorations/mossynodes.lua")

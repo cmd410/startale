@@ -4,6 +4,7 @@ local modpath = minetest.get_modpath(modname)
 dofile(modpath .. "/stone.lua")
 dofile(modpath .. "/liquids.lua")
 dofile(modpath .. "/wood.lua")
+dofile(modpath .. "/plants.lua")
 
 
 minetest.register_node("st_nodes:sand", {
@@ -16,6 +17,15 @@ minetest.register_node("st_nodes:dirt", {
 	description = "Dirt",
 	tiles = {"st_nodes_dirt.png"},
 	groups = {dig_immediate=2, soil=1},
+})
+
+minetest.register_node("st_nodes:leaves", {
+	drawtype="allfaces",
+	use_texture_alpha=true,
+	description = "Leaves",
+	tiles = {"st_nodes_leaves.png"},
+	waving=2,
+	groups = {dig_immediate=2},
 })
 
 minetest.register_node("st_nodes:dirt_with_grass", {
