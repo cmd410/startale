@@ -8,9 +8,9 @@ end
 minetest.register_node("st_nodes:oak_log", {
 	description = "Oak log",
 	tiles = {
-        "st_nodes_wood_log_tops.png^[multiply:#ffcd9c",
-        "st_nodes_wood_log_tops.png^[multiply:#ffcd9c",
-        "st_nodes_rough_wood.png^[multiply:#ffcd9c"
+        "st_nodes_log_tops.png^[multiply:#AA8068",
+        "st_nodes_log_tops.png^[multiply:#AA8068",
+        "st_nodes_bark.png^[multiply:#AA8068"
     },
 	groups = {dig_immediate=2},
     paramtype2 = "facedir",

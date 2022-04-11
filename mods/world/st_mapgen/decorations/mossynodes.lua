@@ -3,12 +3,16 @@ local moss_sources = {
     "st_nodes:water_source",
     "st_nodes:mossystone",
     "st_nodes:mossycobble",
-    "st_nodes:dirt_with_grass"
+    "st_nodes:dirt_with_grass",
+    "st_nodes:mossypebbles_1",
+    "st_nodes:mossypebbles_2",
+    "st_nodes:mossypebbles_3",
+    "st_nodes:mossypebbles_4",
 }
 
 local spawning = {
     spawn_delay = 60,
-    spawn_chance = 20,
+    spawn_chance = 15,
     rarity=3,
     near_nodes=moss_sources,
     near_nodes_size=1,
@@ -34,3 +38,8 @@ end
 
 register_moss_node("st_nodes:stone", "st_nodes:mossystone")
 register_moss_node("st_nodes:cobble", "st_nodes:mossycobble")
+
+register_moss_node("st_nodes:pebbles_1", "st_nodes:mossypebbles_1")
+register_moss_node("st_nodes:pebbles_2", "st_nodes:mossypebbles_2")
+register_moss_node("st_nodes:pebbles_3", "st_nodes:mossypebbles_3")
+register_moss_node("st_nodes:pebbles_4", "st_nodes:mossypebbles_4")

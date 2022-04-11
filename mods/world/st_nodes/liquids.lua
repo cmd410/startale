@@ -2,9 +2,11 @@ local WATER_ALPHA = "^[opacity:" .. 200
 local WATER_VISC = 1
 local LAVA_VISC = 7
 
+local water_color = "#4E588A"
+
 
 local water_source_tiles = {
-	{	name = "st_nodes_water.png"..WATER_ALPHA,
+	{	name = "st_nodes_water.png^[multiply:".. water_color ..WATER_ALPHA,
 		backface_culling = false,
 		animation = {
 			type = "vertical_frames",
@@ -13,7 +15,7 @@ local water_source_tiles = {
 			length = 4.0
 		}
 	},
-	{	name = "st_nodes_water.png"..WATER_ALPHA,
+	{	name = "st_nodes_water.png^[multiply:".. water_color..WATER_ALPHA,
 		backface_culling = false,
 		animation = {
 			type = "vertical_frames",

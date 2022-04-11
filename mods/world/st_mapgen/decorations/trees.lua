@@ -1,5 +1,5 @@
 local treedef = {
-    axiom = "TTTTT",
+    axiom = "TTTTTT",
     trunk = "st_nodes:oak_log",
     angle = 35,
     iterations = 1,
